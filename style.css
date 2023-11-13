@@ -1,0 +1,245 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+header {
+  height: 80px;
+  width: 100%;
+  margin: 0;
+  border-bottom: 5px solid #a16b15;
+  border-top: 5px solid #a16b15;
+  vertical-align: middle;
+}
+
+.header_nav {
+  width: 63%;
+  float: right;
+  color: #385529;
+  font-weight: 700;
+  list-style: none;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.header_item:hover {
+  color: #971b1e;
+}
+
+.header_image {
+  width: 300px;
+  height: 70px;
+  float: left;
+  margin: auto;
+  margin-left: 15px !important;
+  margin-top: 5px !important;
+  vertical-align: middle;
+}
+
+#gallery {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image {
+  max-width: 100%;
+  display: block;
+}
+
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  background-color: #333;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+#prev {
+  left: 0;
+}
+
+#next {
+  right: 0;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-item {
+  display: inline-block;
+  padding: 0 1px;
+  margin-right: 10px;
+}
+.marquee-item:nth-child(odd) {
+  color: #971b1e;
+}
+
+.marquee-item:nth-child(even) {
+  color: #385529;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.events {
+  width: 30%;
+  margin-left: 20px;
+}
+.events h2 {
+  color: #385529;
+}
+.event_image {
+  width: 300px;
+  margin-left: 25px;
+}
+
+.cbit-news {
+  width: 30%;
+}
+.cbit-news img {
+  width: 100%;
+}
+.cbit-news h2 {
+  color: #385529;
+}
+.quick-links h2 {
+  color: #385529;
+}
+
+.quick-links {
+  width: 30%;
+  text-align: center;
+}
+.quick-links li {
+  margin-right: 20px;
+  list-style-type: none;
+  padding: 15px;
+  border: 0px solid black;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.quick-links li a {
+  text-decoration: none;
+  color: white;
+}
+h2 {
+  text-align: center;
+}
+
+#codeofc {
+  background-color: #ff3e41;
+}
+#examin {
+  background-color: rgb(99, 209, 45);
+}
+#result {
+  background-color: #43b9fd;
+}
+#intern {
+  background-color: #ffbd16;
+}
+#tt {
+  background-color: #b036e5;
+}
+
+.recruiter-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #f1f1f1;
+}
+
+.recruiter-container h2 {
+  margin-top: -10px;
+  color: #385529;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.company-image {
+  width: 150px;
+  height: auto;
+}
+
+.placement-highlights {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.placement {
+  margin-top: 40px;
+  text-align: center;
+  color: #385529;
+  margin-bottom: 40px;
+}
+.highlight-column {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+.hcompany-image {
+  width: 50px;
+}
+
+.placement-number {
+  font-size: xx-large;
+  font-weight: 400;
+  color: #385529;
+}
+
+footer {
+  margin-top: 40px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.college-logo {
+  width: 450px;
+  height: auto;
+}
+
+.contact-info {
+  margin-top: 10px;
+  font-size: 18px;
+}
